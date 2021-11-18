@@ -1,7 +1,4 @@
-const {
-    Schema,
-    model
-} = require('mongoose')
+const { Schema, model } = require('mongoose')
 
 const categorySchema = new Schema({
     name: {
@@ -10,7 +7,6 @@ const categorySchema = new Schema({
     },
     img: {
         type: String,
-        required: true
     },
 })
 
