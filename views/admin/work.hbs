@@ -1,0 +1,23 @@
+<h2>{{work.name}}</h2>
+
+<div class="row">
+
+  <div class="col-sm-3" style="margin: 20px;">
+    <div class="card" style="width: 18rem;">
+      <img src="/images/{{work.img}}" class="card-img-top" alt="{{work.name}}" />
+      <div class="card-body">
+        <h5 class="card-title">{{work.name}}</h5> <br>
+        <hr>
+      </div>
+      <ul class="list-group list-group-flush">
+        <li class="list-group-item">{{work.price}}</li>
+        <li class="list-group-item">{{work.comment}}</li>
+        <li class="list-group-item">{{work.adress}}</li>
+      </ul>
+      <div class="card-body d-flex justify-content-between">
+        <a href="/admin/works/edit/{{work.id}}" class="card-link">Edit</a>
+        <a href="/admin/works/delete/{{work.id}}" class="card-link">Delete</a>
+      </div>
+    </div>
+  </div>
+</div>
